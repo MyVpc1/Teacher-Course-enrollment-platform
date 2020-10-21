@@ -1,0 +1,90 @@
+.grid-container_my_courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas:
+    "cover_img_course side_part_course side_part_course side_part_course"
+    ". . . ."
+    ". . . .";
+    max-height: 150px;
+    width: 100%;
+    text-align: center;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding-right: 10px;
+}
+
+.cover_img_course {
+    grid-area: cover_img_course;
+}
+
+.cover_img_course img {
+    max-height: 150px;
+}
+
+.side_part_course {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas:
+    "title_my_courses title_my_courses title_my_courses"
+    "total_students_my_courses total_students_my_courses total_students_my_courses"
+    "progress_bar_my_courses progress_bar_my_courses progress_bar_my_courses"
+    "chat_mentor schedule classworks";
+    grid-area: side_part_course;
+    max-height: 150px;
+    padding-bottom: 20px;
+}
+
+.title_my_courses {
+    grid-area: title_my_courses;
+}
+
+.title_my_courses p {
+    text-align: center;
+    color: #000000;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+.total_students_my_courses {
+    grid-area: total_students_my_courses;
+}
+
+.progress_bar_my_courses {
+    grid-area: progress_bar_my_courses;
+    max-width: 90%;
+    margin-left: 15px;
+}
+
+.chat_mentor {
+    grid-area: chat_mentor;
+}
+
+.schedule {
+    grid-area: schedule;
+}
+
+.classworks {
+    grid-area: classworks;
+}
+
+.btn_chat_mentor {
+    width: 100%;
+    height: auto;
+    padding: 10px 25px;
+    color: blue;
+}
+
+@media(max-width: 550px) {
+    .grid-container_my_courses {
+        margin-left: 0px;
+    }
+}

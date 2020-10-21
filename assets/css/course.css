@@ -1,0 +1,457 @@
+.grid-container_cover {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    gap: 1px 1px;
+    grid-template-areas: "cover_poster";
+    width: 100%:
+}
+
+.cover_poster {
+    grid-area: cover_poster;
+    width: 100%;
+    height: 500px;
+    background: url("../../images/course_cover.jpg") center center/cover no-repeat;
+}
+
+.checked {
+    color: orange;
+}
+
+.grid-container_course_top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr;
+    gap: 1px 1px;
+    grid-template-areas: "title_course title_course title_course" "rating_course rating_course rating_course" "duration_course level_course enrolled_course";
+    max-width: 650px;
+    margin-left: 120px;
+    margin-top: -300px;
+}
+
+.title_course {
+    grid-area: title_course;
+}
+
+.title_course h2 {
+    color: #ffffff;
+    line-height: 1.5;
+    font-size: 35px;
+    font-family: 'Libre Baskerville','Helvetica Neue', 'Arial', 'Verdana', 'sans-serif';
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-transform: none;
+}
+
+.rating_course {
+    grid-area: rating_course;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+
+.duration_course {
+    grid-area: duration_course;
+    margin-top: 15px;
+}
+
+.duration_course p {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.level_course {
+    grid-area: level_course;
+    margin-top: 15px;
+}
+
+.level_course p {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.enrolled_course {
+    grid-area: enrolled_course;
+    margin-top: 15px;
+}
+
+.enrolled_course p {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.grid-container_course_details {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "desc_course course_overview";
+    margin-top: 150px;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-bottom: 50px;
+}
+
+.desc_course {
+    grid-area: desc_course;
+    margin-right: 30px;
+}
+
+.desc_course h3 {
+    text-align: left;
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: Verdana, sans-serif;
+    padding: 20px 0px;
+    margin-bottom: 0px;
+}
+
+.desc_course p {
+    text-align: justify;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.0em;
+    font-family: Verdana, sans-serif;
+}
+
+.course_overview {
+    grid-area: course_overview;
+    margin-top: -320px;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+    text-align: center;
+}
+
+.course_overview h1 {
+    text-align: center;
+    color: #000000;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: Verdana, sans-serif;
+    padding: 20px 0px;
+}
+
+.btn_enroll {
+    color: #ffffff;
+    border: none;
+    background-color: #ff5722;
+    border-radius: 5px;
+    padding: 10px 105px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    line-height: 1.7;
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.course_overview h3 {
+    text-align: left;
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: Verdana, sans-serif;
+    padding: 20px 30px;
+    margin-bottom: 0px;
+}
+
+.course_overview p {
+    text-align: left;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: Verdana, sans-serif;
+    padding: 5px 30px;
+}
+
+.course_overview h5 {
+    text-align: left;
+    color: #000000;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+    padding: 10px 30px;
+    margin-bottom: 0px;
+}
+
+.course_image_cover {
+    width: 100%;
+    height: auto;
+}
+
+.course_image {
+    width: 100%;
+    height: 150px;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+
+.course_popular_cover {
+    font-size: 18px;
+    text-align: left;
+}
+
+.grid-container_rating_reviews {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 0.5fr;
+    gap: 1px 1px;
+    grid-template-areas: "overall_rating rating_progress rating_desc";
+    margin-top: 50px;
+}
+
+.overall_rating {
+    grid-area: overall_rating;
+    text-align: center;
+}
+
+.overall_rating h1 {
+    text-align: center;
+    color: #000000;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: Verdana, sans-serif;
+    padding-top: 40px;
+}
+
+.rating_progress {
+    grid-area: rating_progress;
+}
+
+.rating_desc {
+    grid-area: rating_desc;
+}
+
+.progress_percent {
+    padding: 0px 0px 14px 10px;
+}
+
+.grid-container_course_review_desc {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 0.5fr;
+    gap: 1px 1px;
+    grid-template-areas: "dp_reviewer course_review_desc";
+    margin-top: 30px;
+}
+
+.dp_reviewer {
+    grid-area: dp_reviewer;
+    text-align: center;
+}
+
+.dp_reviewer p {
+    color: #000000;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: Verdana, sans-serif;
+    padding: 5px 0px;
+    margin-bottom: 0px;
+}
+
+.course_review_desc {
+    grid-area: course_review_desc;
+    margin-left: -30px;
+}
+
+.course_review_desc h3 {
+    text-align: left;
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: Verdana, sans-serif;
+    padding: 10px 0px;
+    margin-bottom: 0px;
+}
+
+.course_review_desc p {
+    text-align: justify;
+    color: #000000;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: Verdana, sans-serif;
+    margin-bottom: 0px;
+}
+
+.course_curriculum p {
+    text-align: left;
+    color: #000000;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: Verdana, sans-serif;
+    padding: 10px 0px 5px 0px;
+}
+
+.course_curriculum h6 {
+    text-align: center;
+    color: #000000;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    padding: 10px 0px;
+    border-bottom: 1.5px solid #000;
+    margin-bottom: 20px;
+}
+
+.course_curriculum hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 575px) {
+    .cover_poster {
+        height: 300px;
+        width: 100%;
+        background: url("../../images/course_cover.jpg") left center/cover no-repeat;
+    }
+    .btn_enroll {
+        padding: 10px 80px;
+    }
+    .grid-container_course_top {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.2fr;
+        gap: 1px 1px;
+        grid-template-areas: "title_course title_course title_course" "rating_course rating_course rating_course" "duration_course level_course enrolled_course";
+        max-width: 100%;
+        margin-left: 10px;
+        margin-top: -180px;
+    }
+
+    .title_course {
+        grid-area: title_course;
+    }
+
+    .title_course h2 {
+        color: #ffffff;
+        line-height: 1.5;
+        font-size: 20px;
+        font-family: 'Libre Baskerville','Helvetica Neue', 'Arial', 'Verdana', 'sans-serif';
+        font-weight: 700;
+        letter-spacing: 0px;
+        text-transform: none;
+    }
+
+    .rating_course {
+        grid-area: rating_course;
+        padding-bottom: 20px;
+        color: #ffffff;
+    }
+
+    .duration_course {
+        grid-area: duration_course;
+        margin-top: 0px;
+    }
+
+    .duration_course p {
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    .level_course {
+        grid-area: level_course;
+        margin-top: 0px;
+    }
+
+    .level_course p {
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    .enrolled_course {
+        grid-area: enrolled_course;
+        margin-top: 0px;
+    }
+
+    .enrolled_course p {
+        color: #ffffff;
+        font-weight: 600;
+    }
+    
+    .grid-container_course_details {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1px 1px;
+        grid-template-areas: "desc_course" "course_overview";
+        margin-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+    }
+    .desc_course {
+        grid-area: desc_course;
+        margin-right: 0px;
+    }
+
+    .desc_course h3 {
+        text-align: left;
+        color: #000000;
+        font-weight: 600;
+        font-size: 18px;
+        font-family: Verdana, sans-serif;
+        padding: 20px 0px;
+        margin-bottom: 0px;
+    }
+
+    .desc_course p {
+        text-align: justify;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 2.0em;
+        font-family: Verdana, sans-serif;
+    }
+
+    .course_overview {
+        grid-area: course_overview;
+        margin-top: 10px;
+        background-color: #ffffff;
+        padding: 5px;
+        border-radius: 5px;
+        margin-left: 0px;
+        box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+        text-align: center;
+    }
+    .grid-container_rating_reviews {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        gap: 1px 1px;
+        grid-template-areas: "overall_rating overall_rating" "rating_progress rating_desc";
+        margin-top: -35px;
+    }
+    .rating_progress {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .rating_desc {
+        margin-top: 20px;
+    }
+    .grid-container_course_review_desc {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        gap: 1px 1px;
+        grid-template-areas: "dp_reviewer" "course_review_desc";
+        margin-top: 30px;
+    } 
+    .dp_reviewer p {
+        padding: 5px 0px;
+    }
+    .course_review_desc {
+        grid-area: course_review_desc;
+        margin-left: 0px;
+    }
+}
+@media (max-width: 320px) {
+    .btn_enroll {
+        padding: 10px 50px;
+    }
+}

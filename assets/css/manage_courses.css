@@ -1,0 +1,76 @@
+.grid-container_course {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.2fr 0.2fr 0.2fr;
+    gap: 1px 1px;
+    grid-template-areas: "cover_course_img cover_course_img cover_course_img" "course_heading course_heading course_heading" "course_rating course_rating course_rating" "course_lessons course_students course_classwork";
+    margin: 0px 0px 10px 15px;
+    padding: 7px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.checked {
+    color: orange;
+}
+
+.cover_course_img {
+    grid-area: cover_course_img;
+}
+
+.course_image {
+    width: 100%;
+    height: auto;
+}
+
+.course_heading {
+    grid-area: course_heading;
+    text-align: left;
+}
+
+.course_heading p {
+    color: #222222;
+    font-size: 13px;
+    font-family: 'Libre Baskerville','Helvetica Neue', 'Arial', 'Verdana', 'sans-serif';
+    font-weight: 600;
+}
+
+.course_rating {
+    grid-area: course_rating;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.course_lessons {
+    grid-area: course_lessons;
+}
+    
+.course_students {
+    grid-area: course_students;
+}
+
+.curr_inp {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #a1a2a3;
+    border-radius: 5px;
+}
+
+@media (max-width: 575px) {
+    .from_sch {
+        width: 50px;
+    }
+
+    .to_sch {
+        width: 50px;
+    }
+}
+
+@media (min-width: 575px) {
+    .row {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
